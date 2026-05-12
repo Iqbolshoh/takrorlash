@@ -1,0 +1,73 @@
+{
+    "header": {
+        "logo": "Freelancer",
+        "home": "Bosh sahifa",
+        "projects": "Loyihalar",
+        "contact": "Bog'lanish"
+    },
+    "about": {
+        "smallTitle": "Men haqimda",
+        "title": "Full-Stack Dasturchi",
+        "description1": "Men zamonaviy, responsive va foydalanuvchiga qulay web ilovalar yaratishni yoqtiradigan dasturchiman. React, Laravel, Tailwind CSS va boshqa zamonaviy texnologiyalar bilan ishlayman.",
+        "description2": "Mening maqsadim foydalanuvchilar va bizneslar uchun tezkor, chiroyli va sifatli digital tajribalar yaratish.",
+        "skills": {
+            "react": "React",
+            "laravel": "Laravel",
+            "tailwind": "Tailwind CSS",
+            "javascript": "JavaScript",
+            "php": "PHP"
+        }
+    },
+    "footer": {
+        "logo": "Freelancer",
+        "description": "React, Laravel va Tailwind CSS yordamida zamonaviy va responsive web ilovalar yarataman.",
+        "home": "Bosh sahifa",
+        "projects": "Loyihalar",
+        "contact": "Bog'lanish",
+        "copyright": "© 2026 Freelancer. Barcha huquqlar himoyalangan."
+    },
+    "hero": {
+        "smallTitle": "Salom, men",
+        "name": "Iqbolshoh",
+        "job": "Full-Stack Dasturchi",
+        "description": "Men React, Laravel va Tailwind CSS yordamida zamonaviy, tezkor va responsive web ilovalar yarataman.",
+        "projectsButton": "Loyihalarni Ko'rish",
+        "contactButton": "Bog'lanish"
+    },
+    "notFound": {
+        "title": "Sahifa Topilmadi",
+        "description": "Kechirasiz, siz qidirayotgan sahifa mavjud emas yoki ko‘chirilgan.",
+        "button": "Bosh Sahifaga Qaytish"
+    },
+    "contact": {
+        "smallTitle": "Bog'lanish",
+        "title": "Men Bilan Bog'laning",
+        "description": "Loyiha g'oyangiz bormi yoki birgalikda ishlamoqchimisiz? Istalgan vaqtda men bilan bog'lanishingiz mumkin.",
+        "infoTitle": "Bog'lanish Ma'lumotlari",
+        "email": "Email",
+        "phone": "Telefon",
+        "location": "Manzil",
+        "form": {
+            "name": "Ismingiz",
+            "namePlaceholder": "Ismingizni kiriting",
+            "email": "Emailingiz",
+            "emailPlaceholder": "Emailingizni kiriting",
+            "message": "Xabar",
+            "messagePlaceholder": "Xabaringizni yozing...",
+            "button": "Xabar Yuborish"
+        }
+    },
+    "projects": {
+        "smallTitle": "Mening Ishlarim",
+        "title": "Loyihalar",
+        "description": "Bu yerda zamonaviy web texnologiyalar va clean UI dizayn yordamida yaratilgan so‘nggi loyihalarimni ko‘rishingiz mumkin.",
+        "viewButton": "Loyihani Ko'rish"
+    },
+    "projectDetails": {
+        "smallTitle": "Loyiha Tafsilotlari",
+        "liveDemo": "Jonli Demo",
+        "notFoundTitle": "Loyiha Topilmadi",
+        "notFoundDescription": "Siz qidirayotgan loyiha mavjud emas.",
+        "backButton": "Loyihalarga Qaytish"
+    }
+}

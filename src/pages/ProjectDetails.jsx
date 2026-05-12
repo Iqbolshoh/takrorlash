@@ -1,13 +1,17 @@
-import { Link, useParams } from "react-router-dom"
-import projects from "../data/projects"
+import { Link, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+import projects from "../data/projects";
 
 function ProjectDetails() {
 
-    const { id } = useParams()
+    const { id } = useParams();
+
+    const { t, i18n } = useTranslation();
 
     const project = projects.find(
         project => project.id === parseInt(id)
-    )
+    );
 
     // Project topilmasa
     if (!project) {
@@ -17,24 +21,35 @@ function ProjectDetails() {
                 <div className="text-center">
 
                     <h1 className="text-5xl font-bold text-red-500">
-                        Project Not Found
+                        {t("projectDetails.notFoundTitle")}
                     </h1>
 
                     <p className="text-gray-400 mt-5">
-                        The project you are looking for does not exist.
+                        {t("projectDetails.notFoundDescription")}
                     </p>
 
                     <Link
                         to="/projects"
-                        className="inline-block mt-8 bg-blue-500 hover:bg-blue-600 transition duration-300 px-6 py-3 rounded-xl font-semibold"
+                        className="
+                            inline-block
+                            mt-8
+                            bg-blue-500
+                            hover:bg-blue-600
+                            transition
+                            duration-300
+                            px-6
+                            py-3
+                            rounded-xl
+                            font-semibold
+                        "
                     >
-                        Back To Projects
+                        {t("projectDetails.backButton")}
                     </Link>
 
                 </div>
 
             </section>
-        )
+        );
     }
 
     return (
@@ -47,7 +62,7 @@ function ProjectDetails() {
 
                     <img
                         src={project.image}
-                        alt={project.title}
+                        alt={project.title[i18n.language]}
                         className="w-full h-[500px] object-cover"
                     />
 
@@ -57,15 +72,15 @@ function ProjectDetails() {
                 <div className="mt-12">
 
                     <p className="text-blue-400 text-lg mb-3">
-                        Project Details
+                        {t("projectDetails.smallTitle")}
                     </p>
 
                     <h1 className="text-5xl font-bold">
-                        {project.title}
+                        {project.title[i18n.language]}
                     </h1>
 
                     <p className="text-gray-400 leading-8 mt-6 text-lg">
-                        {project.description}
+                        {project.description[i18n.language]}
                     </p>
 
                     {/* Technologies */}
@@ -74,7 +89,14 @@ function ProjectDetails() {
                         {project.technologies.map((tech, index) => (
                             <span
                                 key={index}
-                                className="bg-gray-900 border border-gray-700 px-5 py-2 rounded-xl"
+                                className="
+                                    bg-gray-900
+                                    border
+                                    border-gray-700
+                                    px-5
+                                    py-2
+                                    rounded-xl
+                                "
                             >
                                 {tech}
                             </span>
@@ -89,16 +111,36 @@ function ProjectDetails() {
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-blue-500 hover:bg-blue-600 transition duration-300 px-8 py-4 rounded-2xl font-semibold"
+                            className="
+                                bg-blue-500
+                                hover:bg-blue-600
+                                transition
+                                duration-300
+                                px-8
+                                py-4
+                                rounded-2xl
+                                font-semibold
+                            "
                         >
-                            Live Demo
+                            {t("projectDetails.liveDemo")}
                         </a>
 
                         <a
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="border border-gray-700 hover:border-blue-400 hover:text-blue-400 transition duration-300 px-8 py-4 rounded-2xl font-semibold"
+                            className="
+                                border
+                                border-gray-700
+                                hover:border-blue-400
+                                hover:text-blue-400
+                                transition
+                                duration-300
+                                px-8
+                                py-4
+                                rounded-2xl
+                                font-semibold
+                            "
                         >
                             GitHub
                         </a>
@@ -110,7 +152,7 @@ function ProjectDetails() {
             </div>
 
         </section>
-    )
+    );
 }
 
-export default ProjectDetails
+export default ProjectDetails;

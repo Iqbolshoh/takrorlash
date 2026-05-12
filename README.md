@@ -30,6 +30,11 @@ npm install tailwindcss @tailwindcss/vite
 npm install lucide-react
 ```
 
+# Til qo'shish
+```bash
+npm install i18next react-i18next i18next-browser-languagedetector
+```
+
 # Loyihani tugatish
 ```bash
 npm run build

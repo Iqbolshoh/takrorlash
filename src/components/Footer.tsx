@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+
+    const { t } = useTranslation();
+
     return (
         <footer className="bg-gray-950 border-t border-gray-800 text-white px-6 md:px-16 py-10">
 
@@ -11,13 +15,12 @@ function Footer() {
 
                     <Link to="/">
                         <h2 className="text-3xl font-bold text-blue-400">
-                            Freelancer
+                            {t("footer.logo")}
                         </h2>
                     </Link>
 
                     <p className="text-gray-400 mt-3 max-w-[350px] leading-7">
-                        Building modern and responsive web applications
-                        with React, Laravel and Tailwind CSS.
+                        {t("footer.description")}
                     </p>
 
                 </div>
@@ -29,21 +32,21 @@ function Footer() {
                         to="/"
                         className="hover:text-blue-400 transition duration-300"
                     >
-                        Home
+                        {t("footer.home")}
                     </Link>
 
                     <Link
                         to="/projects"
                         className="hover:text-blue-400 transition duration-300"
                     >
-                        Projects
+                        {t("footer.projects")}
                     </Link>
 
                     <Link
                         to="/contact"
                         className="hover:text-blue-400 transition duration-300"
                     >
-                        Contact
+                        {t("footer.contact")}
                     </Link>
 
                 </nav>
@@ -54,7 +57,7 @@ function Footer() {
             <div className="mt-10 pt-6 border-t border-gray-800 text-center text-gray-500">
 
                 <p>
-                    © 2026 Freelancer. All rights reserved.
+                    {t("footer.copyright")}
                 </p>
 
             </div>

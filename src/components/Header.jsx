@@ -1,10 +1,22 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Home, FolderKanban, Mail, Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
+import {
+    Home,
+    FolderKanban,
+    Mail,
+    Menu,
+    X
+} from "lucide-react";
+
+import LanguageSelect from "./LanguageSelect";
 
 function Header() {
 
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const { t } = useTranslation();
 
     return (
         <header className="bg-gray-900/90 backdrop-blur-md text-white sticky top-0 z-50 border-b border-gray-800">
@@ -14,7 +26,7 @@ function Header() {
                 {/* Logo */}
                 <Link to="/">
                     <h2 className="text-3xl font-bold text-blue-400 cursor-pointer">
-                        Freelancer
+                        {t("header.logo")}
                     </h2>
                 </Link>
 
@@ -26,7 +38,7 @@ function Header() {
                         className="flex items-center gap-2 text-lg font-medium hover:text-blue-400 transition duration-300"
                     >
                         <Home size={20} />
-                        Home
+                        {t("header.home")}
                     </Link>
 
                     <Link
@@ -34,7 +46,7 @@ function Header() {
                         className="flex items-center gap-2 text-lg font-medium hover:text-blue-400 transition duration-300"
                     >
                         <FolderKanban size={20} />
-                        Projects
+                        {t("header.projects")}
                     </Link>
 
                     <Link
@@ -42,8 +54,10 @@ function Header() {
                         className="flex items-center gap-2 text-lg font-medium hover:text-blue-400 transition duration-300"
                     >
                         <Mail size={20} />
-                        Contact
+                        {t("header.contact")}
                     </Link>
+
+                    <LanguageSelect />
 
                 </nav>
 
@@ -70,7 +84,7 @@ function Header() {
                         className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
                     >
                         <Home size={20} />
-                        Home
+                        {t("header.home")}
                     </Link>
 
                     <Link
@@ -79,7 +93,7 @@ function Header() {
                         className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
                     >
                         <FolderKanban size={20} />
-                        Projects
+                        {t("header.projects")}
                     </Link>
 
                     <Link
@@ -88,8 +102,10 @@ function Header() {
                         className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
                     >
                         <Mail size={20} />
-                        Contact
+                        {t("header.contact")}
                     </Link>
+
+                    <LanguageSelect />
 
                 </nav>
             )}

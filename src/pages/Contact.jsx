@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 function Contact() {
+
+    const { t } = useTranslation();
+
     return (
         <section className="bg-gray-950 text-white min-h-screen py-20 px-6">
 
@@ -8,16 +13,15 @@ function Contact() {
                 <div className="text-center mb-16">
 
                     <p className="text-blue-400 text-lg mb-3">
-                        Get In Touch
+                        {t("contact.smallTitle")}
                     </p>
 
                     <h1 className="text-5xl font-bold">
-                        Contact Me
+                        {t("contact.title")}
                     </h1>
 
                     <p className="text-gray-400 mt-5 max-w-2xl mx-auto leading-7">
-                        Have a project idea or want to work together?
-                        Feel free to contact me anytime.
+                        {t("contact.description")}
                     </p>
 
                 </div>
@@ -29,14 +33,14 @@ function Contact() {
                     <div className="bg-gray-900 border border-gray-800 rounded-3xl p-8">
 
                         <h2 className="text-3xl font-bold mb-6">
-                            Contact Information
+                            {t("contact.infoTitle")}
                         </h2>
 
                         <div className="space-y-6">
 
                             <div>
                                 <p className="text-gray-400 mb-1">
-                                    Email
+                                    {t("contact.email")}
                                 </p>
 
                                 <h3 className="text-xl font-semibold">
@@ -46,7 +50,7 @@ function Contact() {
 
                             <div>
                                 <p className="text-gray-400 mb-1">
-                                    Phone
+                                    {t("contact.phone")}
                                 </p>
 
                                 <h3 className="text-xl font-semibold">
@@ -56,7 +60,7 @@ function Contact() {
 
                             <div>
                                 <p className="text-gray-400 mb-1">
-                                    Location
+                                    {t("contact.location")}
                                 </p>
 
                                 <h3 className="text-xl font-semibold">
@@ -74,12 +78,12 @@ function Contact() {
                         <div>
 
                             <label className="block mb-2 text-gray-300">
-                                Your Name
+                                {t("contact.form.name")}
                             </label>
 
                             <input
                                 type="text"
-                                placeholder="Enter your name"
+                                placeholder={t("contact.form.namePlaceholder")}
                                 className="w-full bg-gray-800 border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-blue-500"
                             />
 
@@ -88,12 +92,12 @@ function Contact() {
                         <div>
 
                             <label className="block mb-2 text-gray-300">
-                                Your Email
+                                {t("contact.form.email")}
                             </label>
 
                             <input
                                 type="email"
-                                placeholder="Enter your email"
+                                placeholder={t("contact.form.emailPlaceholder")}
                                 className="w-full bg-gray-800 border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-blue-500"
                             />
 
@@ -102,12 +106,12 @@ function Contact() {
                         <div>
 
                             <label className="block mb-2 text-gray-300">
-                                Message
+                                {t("contact.form.message")}
                             </label>
 
                             <textarea
                                 rows="6"
-                                placeholder="Write your message..."
+                                placeholder={t("contact.form.messagePlaceholder")}
                                 className="w-full bg-gray-800 border border-gray-700 rounded-xl px-5 py-4 outline-none focus:border-blue-500 resize-none"
                             ></textarea>
 
@@ -116,7 +120,7 @@ function Contact() {
                         <button
                             className="w-full bg-blue-500 hover:bg-blue-600 transition duration-300 py-4 rounded-xl text-lg font-semibold"
                         >
-                            Send Message
+                            {t("contact.form.button")}
                         </button>
 
                     </form>

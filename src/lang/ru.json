@@ -1,0 +1,73 @@
+{
+    "header": {
+        "logo": "Freelancer",
+        "home": "Главная",
+        "projects": "Проекты",
+        "contact": "Контакты"
+    },
+    "about": {
+        "smallTitle": "Обо мне",
+        "title": "Full-Stack Разработчик",
+        "description1": "Я увлечённый разработчик, который любит создавать современные, адаптивные и удобные веб-приложения. Я работаю с React, Laravel, Tailwind CSS и другими современными технологиями.",
+        "description2": "Моя цель — создавать быстрые, чистые и красивые цифровые решения для пользователей и бизнеса.",
+        "skills": {
+            "react": "React",
+            "laravel": "Laravel",
+            "tailwind": "Tailwind CSS",
+            "javascript": "JavaScript",
+            "php": "PHP"
+        }
+    },
+    "footer": {
+        "logo": "Freelancer",
+        "description": "Создаю современные и адаптивные веб-приложения с использованием React, Laravel и Tailwind CSS.",
+        "home": "Главная",
+        "projects": "Проекты",
+        "contact": "Контакты",
+        "copyright": "© 2026 Freelancer. Все права защищены."
+    },
+    "hero": {
+        "smallTitle": "Привет, я",
+        "name": "Iqbolshoh",
+        "job": "Full-Stack Разработчик",
+        "description": "Я создаю современные, быстрые и адаптивные веб-приложения с помощью React, Laravel и Tailwind CSS.",
+        "projectsButton": "Посмотреть Проекты",
+        "contactButton": "Связаться Со Мной"
+    },
+    "notFound": {
+        "title": "Страница Не Найдена",
+        "description": "Извините, страница, которую вы ищете, не существует или была перемещена.",
+        "button": "Вернуться На Главную"
+    },
+    "contact": {
+        "smallTitle": "Связаться",
+        "title": "Свяжитесь Со Мной",
+        "description": "У вас есть идея проекта или хотите работать вместе? Свяжитесь со мной в любое время.",
+        "infoTitle": "Контактная Информация",
+        "email": "Email",
+        "phone": "Телефон",
+        "location": "Местоположение",
+        "form": {
+            "name": "Ваше Имя",
+            "namePlaceholder": "Введите ваше имя",
+            "email": "Ваш Email",
+            "emailPlaceholder": "Введите ваш email",
+            "message": "Сообщение",
+            "messagePlaceholder": "Напишите ваше сообщение...",
+            "button": "Отправить Сообщение"
+        }
+    },
+    "projects": {
+        "smallTitle": "Мои Работы",
+        "title": "Проекты",
+        "description": "Здесь вы можете увидеть мои последние проекты, созданные с использованием современных веб-технологий и чистого UI-дизайна.",
+        "viewButton": "Посмотреть Проект"
+    },
+    "projectDetails": {
+        "smallTitle": "Детали Проекта",
+        "liveDemo": "Живая Демонстрация",
+        "notFoundTitle": "Проект Не Найден",
+        "notFoundDescription": "Проект, который вы ищете, не существует.",
+        "backButton": "Вернуться К Проектам"
+    }
+}

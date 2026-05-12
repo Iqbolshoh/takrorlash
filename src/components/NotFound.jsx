@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function NotFound() {
+
+    const { t } = useTranslation();
+
     return (
         <section className="min-h-screen bg-gray-950 text-white flex items-center justify-center px-6">
 
@@ -13,13 +17,12 @@ function NotFound() {
 
                 {/* Title */}
                 <h2 className="text-3xl md:text-5xl font-bold mt-6">
-                    Page Not Found
+                    {t("notFound.title")}
                 </h2>
 
                 {/* Description */}
                 <p className="text-gray-400 mt-5 max-w-xl mx-auto leading-7">
-                    Sorry, the page you are looking for does not exist
-                    or has been moved.
+                    {t("notFound.description")}
                 </p>
 
                 {/* Button */}
@@ -27,7 +30,7 @@ function NotFound() {
                     to="/"
                     className="inline-block mt-10 bg-blue-500 hover:bg-blue-600 transition duration-300 px-8 py-4 rounded-2xl text-lg font-semibold"
                 >
-                    Go Back Home
+                    {t("notFound.button")}
                 </Link>
 
             </div>

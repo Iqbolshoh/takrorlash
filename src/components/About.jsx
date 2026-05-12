@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 function About() {
+
+    const { t } = useTranslation();
+
     return (
         <section className="bg-gray-900 text-white py-24 px-6">
 
@@ -9,7 +14,11 @@ function About() {
 
                     <div className="w-[320px] h-[320px] rounded-3xl bg-blue-500/20 border border-blue-500 flex items-center justify-center">
 
-                        <img src="/images/iqbolshoh.jpg" alt="" className="w-[260px] h-[260px] rounded-2xl bg-gray-800 flex items-center justify-center text-7xl font-bold text-blue-400" />
+                        <img
+                            src="/images/iqbolshoh.jpg"
+                            alt=""
+                            className="w-[260px] h-[260px] rounded-2xl bg-gray-800"
+                        />
 
                     </div>
 
@@ -19,46 +28,42 @@ function About() {
                 <div>
 
                     <p className="text-blue-400 text-lg mb-3">
-                        About Me
+                        {t("about.smallTitle")}
                     </p>
 
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        Full-Stack Developer
+                        {t("about.title")}
                     </h2>
 
                     <p className="text-gray-400 leading-8 mb-6">
-                        I'm a passionate developer who enjoys building modern,
-                        responsive and user-friendly web applications.
-                        I work with React, Laravel, Tailwind CSS and other
-                        modern technologies.
+                        {t("about.description1")}
                     </p>
 
                     <p className="text-gray-400 leading-8 mb-8">
-                        My goal is to create fast, clean and beautiful digital
-                        experiences for users and businesses.
+                        {t("about.description2")}
                     </p>
 
                     {/* Skills */}
                     <div className="flex flex-wrap gap-4">
 
                         <span className="bg-gray-800 border border-gray-700 px-5 py-2 rounded-xl">
-                            React
+                            {t("about.skills.react")}
                         </span>
 
                         <span className="bg-gray-800 border border-gray-700 px-5 py-2 rounded-xl">
-                            Laravel
+                            {t("about.skills.laravel")}
                         </span>
 
                         <span className="bg-gray-800 border border-gray-700 px-5 py-2 rounded-xl">
-                            Tailwind CSS
+                            {t("about.skills.tailwind")}
                         </span>
 
                         <span className="bg-gray-800 border border-gray-700 px-5 py-2 rounded-xl">
-                            JavaScript
+                            {t("about.skills.javascript")}
                         </span>
 
                         <span className="bg-gray-800 border border-gray-700 px-5 py-2 rounded-xl">
-                            PHP
+                            {t("about.skills.php")}
                         </span>
 
                     </div>

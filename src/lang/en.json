@@ -1,0 +1,73 @@
+{
+    "header": {
+        "logo": "Freelancer",
+        "home": "Home",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "about": {
+        "smallTitle": "About Me",
+        "title": "Full-Stack Developer",
+        "description1": "I'm a passionate developer who enjoys building modern, responsive and user-friendly web applications. I work with React, Laravel, Tailwind CSS and other modern technologies.",
+        "description2": "My goal is to create fast, clean and beautiful digital experiences for users and businesses.",
+        "skills": {
+            "react": "React",
+            "laravel": "Laravel",
+            "tailwind": "Tailwind CSS",
+            "javascript": "JavaScript",
+            "php": "PHP"
+        }
+    },
+    "footer": {
+        "logo": "Freelancer",
+        "description": "Building modern and responsive web applications with React, Laravel and Tailwind CSS.",
+        "home": "Home",
+        "projects": "Projects",
+        "contact": "Contact",
+        "copyright": "© 2026 Freelancer. All rights reserved."
+    },
+    "hero": {
+        "smallTitle": "Hello, I'm",
+        "name": "Iqbolshoh",
+        "job": "Full-Stack Developer",
+        "description": "I build modern, fast and responsive web applications using React, Laravel and Tailwind CSS.",
+        "projectsButton": "View Projects",
+        "contactButton": "Contact Me"
+    },
+    "notFound": {
+        "title": "Page Not Found",
+        "description": "Sorry, the page you are looking for does not exist or has been moved.",
+        "button": "Go Back Home"
+    },
+    "contact": {
+        "smallTitle": "Get In Touch",
+        "title": "Contact Me",
+        "description": "Have a project idea or want to work together? Feel free to contact me anytime.",
+        "infoTitle": "Contact Information",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "form": {
+            "name": "Your Name",
+            "namePlaceholder": "Enter your name",
+            "email": "Your Email",
+            "emailPlaceholder": "Enter your email",
+            "message": "Message",
+            "messagePlaceholder": "Write your message...",
+            "button": "Send Message"
+        }
+    },
+    "projects": {
+        "smallTitle": "My Work",
+        "title": "Projects",
+        "description": "Here are some of my recent projects built using modern web technologies and clean UI design.",
+        "viewButton": "View Project"
+    },
+    "projectDetails": {
+        "smallTitle": "Project Details",
+        "liveDemo": "Live Demo",
+        "notFoundTitle": "Project Not Found",
+        "notFoundDescription": "The project you are looking for does not exist.",
+        "backButton": "Back To Projects"
+    }
+}
