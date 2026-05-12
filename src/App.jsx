@@ -1,28 +1,34 @@
-import Tugma from "./components/Tugma"
-import Header from "./components/Header"
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom"
+import Contact from "./pages/Contact"
 import Home from "./pages/Home"
-import About from "./pages/About"
-import { Route, Routes, BrowserRouter } from "react-router-dom"
+import Projects from "./pages/Projects"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import { useEffect } from "react"
+
+const ScrollToTopHandler = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  return null;
+};
 
 function App() {
   return (
-    <>
-      <Tugma sarlavha="Assalomu aleykum" rangi="white" bacgrount="red" />
-      <Tugma sarlavha="JavaScript" rangi="black" bacgrount="yellow" />
-      <Tugma sarlavha={"C++"} rangi={"white"} bacgrount={"blue"} />
+    <BrowserRouter>
+      <ScrollToTopHandler />
 
+      <Header />
 
-      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
 
-        <Header />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<h1>404 - Topilmadi</h1>} />
-        </Routes>
-      </BrowserRouter>
-    </>
+      <Footer />
+    </BrowserRouter>
   )
 }
 

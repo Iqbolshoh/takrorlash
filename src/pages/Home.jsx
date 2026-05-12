@@ -1,11 +1,11 @@
-import Tugma from "../components/Tugma";
+import About from "../components/About";
+import Hero from "../components/Hero";
 
 function Home() {
     return (
         <>
-            <h1>Salom, Dunyo!</h1>
-            <p>Bu birinchi veb-sahifam!</p>
-            <Tugma sarlavha="Bos" rangi="white" bacgrount="green" />
+            <Hero />
+            <About />
         </>
     )
 }
