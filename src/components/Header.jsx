@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Home, FolderKanban, Mail, Menu, X } from "lucide-react";
 
 function Header() {
 
@@ -18,26 +19,29 @@ function Header() {
                 </Link>
 
                 {/* Desktop Menu */}
-                <nav className="hidden md:flex gap-8">
+                <nav className="hidden md:flex items-center gap-8">
 
                     <Link
                         to="/"
-                        className="text-lg font-medium hover:text-blue-400 transition duration-300"
+                        className="flex items-center gap-2 text-lg font-medium hover:text-blue-400 transition duration-300"
                     >
+                        <Home size={20} />
                         Home
                     </Link>
 
                     <Link
                         to="/projects"
-                        className="text-lg font-medium hover:text-blue-400 transition duration-300"
+                        className="flex items-center gap-2 text-lg font-medium hover:text-blue-400 transition duration-300"
                     >
+                        <FolderKanban size={20} />
                         Projects
                     </Link>
 
                     <Link
                         to="/contact"
-                        className="text-lg font-medium hover:text-blue-400 transition duration-300"
+                        className="flex items-center gap-2 text-lg font-medium hover:text-blue-400 transition duration-300"
                     >
+                        <Mail size={20} />
                         Contact
                     </Link>
 
@@ -46,9 +50,12 @@ function Header() {
                 {/* Mobile Button */}
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
-                    className="md:hidden text-3xl"
+                    className="md:hidden"
                 >
-                    {menuOpen ? "✕" : "☰"}
+                    {menuOpen
+                        ? <X size={32} />
+                        : <Menu size={32} />
+                    }
                 </button>
 
             </div>
@@ -60,24 +67,27 @@ function Header() {
                     <Link
                         to="/"
                         onClick={() => setMenuOpen(false)}
-                        className="text-lg hover:text-blue-400 transition"
+                        className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
                     >
+                        <Home size={20} />
                         Home
                     </Link>
 
                     <Link
                         to="/projects"
                         onClick={() => setMenuOpen(false)}
-                        className="text-lg hover:text-blue-400 transition"
+                        className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
                     >
+                        <FolderKanban size={20} />
                         Projects
                     </Link>
 
                     <Link
                         to="/contact"
                         onClick={() => setMenuOpen(false)}
-                        className="text-lg hover:text-blue-400 transition"
+                        className="flex items-center gap-3 text-lg hover:text-blue-400 transition"
                     >
+                        <Mail size={20} />
                         Contact
                     </Link>
 

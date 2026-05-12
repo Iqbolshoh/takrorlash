@@ -5,6 +5,8 @@ import Projects from "./pages/Projects"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { useEffect } from "react"
+import NotFound from "./components/NotFound"
+import ProjectDetails from "./pages/ProjectDetails"
 
 const ScrollToTopHandler = () => {
   const location = useLocation();
@@ -24,7 +26,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<ProjectDetails />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
