@@ -1,11 +1,11 @@
-# React + Vite
+# React Loyiha
 
-## 1. React loyihani yuklash
+## 1. React loyiha yaratish
 ```bash
 npm create vite@latest
 ```
 
-## 2. Kutubxonani yuklash
+## 2. Kutubxonalarni yuklash
 ```bash
 npm install
 ```
@@ -20,12 +20,12 @@ npm run dev
 npm install react-router-dom
 ```
 
-# tailwindcss ni yuklash
+# Tailwindcss ni yuklash
 ```bash
 npm install tailwindcss @tailwindcss/vite
 ```
 
-# lucide-react - ikonkalar uchun
+# lucide-react - Ikonkalar uchun
 ```bash
 npm install lucide-react
 ```
@@ -35,7 +35,12 @@ npm install lucide-react
 npm install i18next react-i18next i18next-browser-languagedetector
 ```
 
-# Loyihani tugatish
+# Loyihani build qilish
 ```bash
 npm run build
+```
+
+# Build qilingan loyihani ishga tushirish
+```bash
+npm run preview
 ```
